@@ -23,7 +23,7 @@ function AllTask({ allTask, setAllTask }) {
   // RENDERING
   return (
     <div className="container">
-      <h1>All Tasks</h1>
+      <h3>All Tasks</h3>
       <hr />
       <br />
       {allTask.length === 0 ? (

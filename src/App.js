@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import { Routes, Route } from "react-router-dom";
 import AllTask from "./components/AllTask";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NewTask from "./components/NewTask";
 import About from "./components/About";
-import "./assets/mystyle.css";
 import EditTask from "./components/EditTask";
 import ErrorPage from "./components/ErrorPage";
 
@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="bg-light">
       <Header />
-      <div className="content">
+      <div style={{ minHeight: "60vh" }}>
         <Routes>
           <Route
             path="/"
